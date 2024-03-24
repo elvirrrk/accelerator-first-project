@@ -1,0 +1,70 @@
+.subscription__button-list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 10px;
+  text-align: start;
+  margin-bottom: 30px;
+  width: 290px;
+
+  @media (min-width: $width-tablet) {
+    width: 310px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 350px;
+    margin-bottom: 40px;
+  }
+}
+
+.buttons-list__item {
+  border-bottom: 2px solid rgba(120, 120, 120, 0.20);
+  width: 100%;
+}
+
+.buttons-list__item:nth-child(3n) {
+  text-align: end;
+}
+
+.buttons-list__button {
+  position: relative;
+  border: none;
+  padding: 0;
+  padding-bottom: 16px;
+  background-color: transparent;
+  font-family: $font-family-main;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(16, 38, 84, 0.50);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 8px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    color: rgba(16, 38, 84, 0.70);
+    box-shadow: 0 2px 0px #787878;
+  }
+
+  &:focus {
+    color: $text-color-dark;
+    box-shadow: 0 2px 0px $button-border-color-dark;
+  }
+
+  &:active,
+  &--clicked {
+    color: $text-color-dark;
+    box-shadow: 0 2px 0px $button-color-tabs;
+  }
+}

@@ -1,0 +1,106 @@
+.swiper__wrapper {
+  @include reset-list;
+  width: 250px;
+
+  @media (min-width: $width-tablet) {
+    width: 560px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1160px;
+  }
+}
+
+.swiper__slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide__wrapper-img {
+  width: 227px;
+  height: 280px;
+  background-color: rgba(16, 38, 84, 0.89);
+
+  @media (min-width: $width-tablet) {
+    width: 260px;
+    height: 300px;
+  }
+}
+
+/* TEXT */
+
+.swiper-slide__title {
+  position: absolute;
+	padding: 0;
+  margin: 0;
+  bottom: 0;
+}
+
+.swiper-slide__text {
+  position: absolute;
+  opacity: 0;
+  bottom: 50px;
+  transition: transform 0.3s;
+}
+
+/* Эффект при наведении */
+
+.swiper__slide:hover .swiper-slide__img{
+  opacity: 0.1;
+}
+
+.swiper__slide:hover .swiper-slide__wrapper-img {
+  filter: drop-shadow(0px 0px 35px rgba(42, 59, 99, 0.17));
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.swiper__slide:hover .swiper-slide__title {
+	top: 20px;
+}
+
+.swiper__slide:hover .swiper-slide__text  {
+  opacity: 1;
+}
+
+.swiper-button-prev {
+
+  @media (min-width: $width-desktop) {
+    left: 0px;
+  }
+}
+
+//Buttons
+
+.swiper__button-prev {
+  background-color: transparent;
+  border: none;
+}
+
+.swiper__button-next{
+  right: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.swiper__prev-svg {
+  stroke: transparent;
+
+  @media (min-width: $width-tablet) {
+    stroke: $text-color-dark;
+  }
+}
+
+.swiper__next-svg {
+  transform: rotate(180deg);
+  stroke: transparent;
+
+  @media (min-width: $width-tablet) {
+    stroke: $text-color-dark;
+  }
+}

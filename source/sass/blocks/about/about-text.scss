@@ -1,0 +1,68 @@
+.about-text {
+  width: 290px;
+  padding: 0 15px 36px 15px;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    width: 502px;
+    padding: 0 0 36px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 355px;
+    padding: 0;
+    margin-right: 145px;
+  }
+}
+.about-text__title {
+  @include mobile-h3;
+  margin: 0 0 12px;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-h3;
+    margin: 0 0 20px;
+  }
+
+  @media (min-width: $width-desktop) {
+    @include desktop-h3;
+    margin: 0 0 25px;
+  }
+}
+
+.about-text__subtitle {
+  display: block;
+  @include mobile-h6;
+  margin: 0 0 36px;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-h6;
+  }
+
+  @media (min-width: $width-desktop) {
+    @include desktop-h6;
+    margin: 0 0 94px;
+  }
+}
+
+.about-text > p {
+  @include mobile-text-m;
+  margin-bottom: 0;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-desktop-text-m;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 0 8px;
+  }
+}
+
+.about-text > p:last-of-type {
+  display: none;
+  margin-bottom: 0;
+
+  @media (min-width: $width-desktop) {
+    display: block;
+  }
+}

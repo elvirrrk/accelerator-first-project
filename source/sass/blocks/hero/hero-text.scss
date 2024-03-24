@@ -1,0 +1,84 @@
+.hero-text {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+  gap: 21px;
+  margin-bottom: 48px;
+
+  @media (min-width: $width-tablet) {
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $width-desktop) {
+    gap: 0;
+    margin-bottom: 0;
+  }
+}
+
+.hero-text__subtitle {
+  display: block;
+  margin: 0 0 14px;
+  width: 155px;
+  @include mobile-h3;
+  color: $text-color-ligth;
+  word-break: break-all;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 8px;
+    width: 185px;
+    @include tablet-h3;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 40px;
+    width: 270px;
+    @include desktop-h3;
+  }
+}
+
+.hero-text__title {
+  margin: 0;
+  width: 157px;
+  @include mobile-h1;
+  color: $text-color-ligth;
+  word-break: break-all;
+
+  @media (min-width: $width-tablet) {
+    width: 187px;
+    @include tablet-h1;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 40px;
+    width: 270px;
+    @include desktop-h1;
+  }
+}
+
+.hero-list {
+  width: 113px;
+  @include reset-list;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 105px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 64px;
+    width: 116px;
+  }
+}
+
+.hero-list__item {
+  @include mobile-text-s;
+  color: $text-color-ligth;
+  word-break: break-all;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-desktop-text-s;
+  }
+}

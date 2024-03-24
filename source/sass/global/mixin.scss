@@ -1,0 +1,258 @@
+@mixin reset-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin reset-fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+//supported in WebKit-based browsers
+
+@mixin text-color-gradient {
+  display: table;
+  background: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0041ca;
+}
+
+//HEADINGS
+// ---------------------------------
+//Mobile
+
+@mixin mobile-h1 {
+  font-family: $font-family-extra;
+  font-size: 62px;
+  font-weight: 800;
+  line-height: 62px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@mixin mobile-h2 {
+  font-family: $font-family-extra;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+@mixin mobile-h3 {
+  font-family: $font-family-extra;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+@mixin mobile-h4 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+@mixin mobile-h5 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@mixin mobile-h6 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+//Tablet
+
+@mixin tablet-h1 {
+  font-family: $font-family-extra;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 85px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@mixin tablet-h2 {
+  font-family: $font-family-extra;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+@mixin tablet-h3 {
+  font-family: $font-family-extra;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+@mixin tablet-h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@mixin tablet-h5 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+@mixin tablet-h6 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+//Desktop
+
+@mixin desktop-h1 {
+  font-family: $font-family-extra;
+  font-size: 92px;
+  font-weight: 800;
+  line-height: 110px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+@mixin desktop-h2 {
+  font-family: $font-family-extra;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 96px;
+  text-transform: uppercase;
+}
+
+@mixin desktop-h3 {
+  font-family: $font-family-extra;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+@mixin desktop-h4 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+@mixin desktop-h5 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@mixin desktop-h6 {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+//TEXT
+// ---------------------------------
+//Mobile
+
+@mixin mobile-text-l {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+@mixin mobile-text-m {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+@mixin mobile-text-s {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+//Tablet & Desktop
+
+@mixin tablet-desktop-text-l {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@mixin tablet-desktop-text-m {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@mixin tablet-desktop-text-s {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+//NUMBERS
+// ---------------------------------
+//Mobile
+
+@mixin mobile-number-xl {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120px;
+}
+
+@mixin mobile-number-l {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+@mixin mobile-number-m {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+@mixin mobile-number-s {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+//Tablet & Desktop
+
+@mixin tablet-desktop-number-xl {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 150px;
+}
+
+@mixin tablet-desktop-number-l {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+@mixin tablet-desktop-number-m {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+@mixin tablet-number-s {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+@mixin desktop-number-s {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}

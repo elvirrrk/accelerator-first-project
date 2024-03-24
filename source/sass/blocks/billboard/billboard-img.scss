@@ -1,0 +1,14 @@
+.billboard__img {
+  width: 290px;
+  height: 290px;
+
+  @media (min-width: $width-tablet) {
+    width: 378px;
+    height: 332px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 660px;
+    height: 500px;
+  }
+}

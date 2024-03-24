@@ -1,0 +1,44 @@
+.subscription {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 45px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $background-color-light-extra;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px 45px;
+    background: $background-color-light-extra image-set(url("../../../img/tablet-weight-plates@1x.webp") 1x, url("../../../img/tablet-weight-plates@2x.webp") 2x) no-repeat;
+    background-size: 325px 385px;
+    background-position: bottom 2px right 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 100px 103px;
+    background: $background-color-light-extra image-set(url("../../../img/desktop-weight-plates@1x.webp") 1x, url("../../../img/desktop-weight-plates@2x.webp") 2x) no-repeat;
+    background-size: 305px 447px;
+    background-position: bottom 1px right 0;
+  }
+}
+
+.subscription__title {
+  margin: 0 0 29px 0;
+
+  @include mobile-h3;
+  color: $text-color-dark;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-h3;
+    margin: 0 0 35px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    @include desktop-h3;
+    margin: 0 0 20px 0;
+  }
+}
+
+.six-month-list {
+  display: none;
+}

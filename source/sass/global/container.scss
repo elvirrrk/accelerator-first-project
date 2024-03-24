@@ -1,0 +1,21 @@
+.page-body {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  width: $width-mobile;
+  font-family: $font-family-main;
+  color: $text-color-dark;
+  background-color: $background-color-light;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+  }
+}
+
+header {
+  background-color: black;
+}

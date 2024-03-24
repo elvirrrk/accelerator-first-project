@@ -1,0 +1,16 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+
+  @media (min-width: $width-tablet) {
+    text-align: center;
+    padding: 60px 45px 116px;
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: left;
+    flex-direction: row;
+    padding: 120px 103px 236px;
+  }
+}

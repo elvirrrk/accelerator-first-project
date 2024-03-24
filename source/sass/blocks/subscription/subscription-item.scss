@@ -1,0 +1,114 @@
+.subscription-item__title {
+  @include mobile-h4;
+
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-h4;
+  }
+
+  @media (min-width: $width-desktop) {
+    @include desktop-h4;
+  }
+}
+
+.subscription-item__subtitle {
+  @include mobile-text-m;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-desktop-text-m;
+  }
+}
+
+.subscription-item__price {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 0;
+  gap: 10px;
+  margin: 69px auto 9px;
+
+  @include mobile-number-m;
+  color: $text-color-accent;
+  gap: 11px;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-desktop-number-m;
+    margin: 60px auto 0;
+    gap: 14px;
+  }
+
+  &::before {
+    content: attr(data-price);
+    position: absolute;
+    z-index: -1;
+    @include mobile-number-xl;
+    color: #e8e8e8;
+    opacity: 0.48;
+    top: -55px;
+
+    @media (min-width: $width-tablet) {
+      @include tablet-desktop-number-xl;
+      top: -61px;
+    }
+  }
+
+  &::after {
+    content: url("../../../img/ruble.svg");
+    width: 24px;
+    height: 33px;
+
+    @media (min-width: $width-tablet) {
+      width: 30px;
+      height: 42px;
+    }
+
+    @media (min-width: $width-tablet) {
+      width: 30px;
+      height: 42px;
+    }
+  }
+}
+
+.subscription-item__button {
+  display: block;
+  padding: 25px 42px;
+  align-items: center;
+  border: 2px solid $button-border-color-dark;
+  font-family: $font-family-main;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $text-color-dark;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: $text-color-ligth;
+    background: $button-color-gradient;
+    border-image: $button-color-gradient;
+    border-image-slice: 1;
+  }
+
+  &:focus {
+    border: 2px solid #000000;
+    background: linear-gradient(97deg, rgba(237, 2, 51, 0.80) 17.6%, rgba(0, 62, 183, 0.80) 95.31%);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.70);
+    background: $button-color-gradient;
+    border-image: $button-color-gradient;
+    border-image-slice: 1;
+  }
+
+  &--disabled {
+    background: transparent;
+    border: 2px solid  $button-border-color-dark;
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}

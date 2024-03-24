@@ -2,3 +2,47 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+// Global
+// ---------------------------------
+
+@import "global/global.scss";
+@import "global/mixin.scss";
+@import "global/variables.scss";
+@import "global/visually-hidden.scss";
+@import "global/fonts.scss";
+@import "global/container.scss";
+
+// Blocks
+// ---------------------------------
+
+//hero
+
+@import "blocks/hero/hero.scss";
+@import "blocks/hero/header.scss";
+@import "blocks/hero/info.scss";
+@import "blocks/hero/hero-text.scss";
+
+//about
+
+@import "blocks/about/about.scss";
+@import "blocks/about/about-text.scss";
+@import "blocks/about/about-media.scss";
+
+//subscription
+
+@import "blocks/subscription/subscription.scss";
+@import "blocks/subscription/subscription-button-list.scss";
+@import "blocks/subscription/subscription-list.scss";
+@import "blocks/subscription/subscription-item.scss";
+
+//billboard
+
+@import "blocks/billboard/billboard.scss";
+@import "blocks/billboard/billboard-info.scss";
+@import "blocks/billboard/billboard-img.scss";
+
+//jury
+
+@import "blocks/jury/jury.scss";
+@import "blocks/jury/swiper.scss";

@@ -1,0 +1,38 @@
+.subscription-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: center;
+
+  @media (min-width: $width-tablet) {
+    gap: 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.subscription-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 197px;
+  padding: 50px 46px;
+  background-color: $background-color-light;
+  overflow-wrap: break-word;
+
+  @media (min-width: $width-tablet) {
+    gap: 22px;
+    padding: 65px;
+    width: 250px;
+  }
+
+  @media (min-width: $width-desktop) {
+    gap: 18px;
+    align-items: center;
+    width: 230px;
+  }
+}

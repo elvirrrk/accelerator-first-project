@@ -1,0 +1,28 @@
+.jury {
+  padding: 40px 46px;
+
+  @media (min-width: $width-tablet) {
+    padding: 30px 5px 60px 104px;
+    width: 560px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 100px 103px;
+    width: 1160px;
+  }
+}
+
+.jury__title {
+  @include mobile-h3;
+  margin: 0 0 20px;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    @include desktop-h3;
+    margin: 0 0 46px;
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: left;
+  }
+}

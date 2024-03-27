@@ -212,9 +212,8 @@
     </div>
     <div class="jury" data-test="juri">
       <h2 class="jury__title">Жюри</h2>
-      <div class="jury__swiper swiper">
-
-        <button class="swiper__button-prev swiper-button-prev" type="button">
+      <div class="jury__swiper">
+        <button class="swiper__button-prev" type="button">
           <svg class="swiper__prev-svg" width="16" height="32">
             <use href="/__spritemap#sprite-jury-arrow"></use>
           </svg>
@@ -229,14 +228,16 @@
                   height="280" alt="тренер Анна Павлова">
               </picture>
             </div>
-            <h3 class="swiper-slide__title">Анна Павлова</h3>
             <div class="swiper-slide__text slide-text">
-              <span class="slide-text__subtitle">CrossFit</span>
-              <ol class="slide-text__list slide-list">
-                <li class="slide-list__item">Certified Level 3 Trainer</li>
-                <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
-                <li class="slide-list__item">Опыт — 6 лет</li>
-              </ol>
+              <h3 class="swiper-slide__title">Анна Павлова</h3>
+              <div class="slide-text__wrapper">
+                <span class="slide-text__subtitle">CrossFit</span>
+                <ul class="slide-text__list slide-list">
+                  <li class="slide-list__item">Certified Level 3 Trainer</li>
+                  <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
+                  <li class="slide-list__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </div>
           </li>
           <li class="swiper__slide swiper-slide">
@@ -248,14 +249,16 @@
                   height="280" alt="тренер Алексей Лавров">
               </picture>
             </div>
-            <h3 class="swiper-slide__title">Алексей Лавров</h3>
             <div class="swiper-slide__text slide-text">
-              <span class="slide-text__subtitle">CrossFit</span>
-              <ol class="slide-text__list slide-list">
-                <li class="slide-list__item">Certified Level 3 Trainer</li>
-                <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
-                <li class="slide-list__item">Опыт — 6 лет</li>
-              </ol>
+              <h3 class="swiper-slide__title">Алексей Лавров</h3>
+              <div class="slide-text__wrapper">
+                <span class="slide-text__subtitle">CrossFit</span>
+                <ul class="slide-text__list slide-list">
+                  <li class="slide-list__item">Certified Level 3 Trainer</li>
+                  <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
+                  <li class="slide-list__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </div>
           </li>
           <li class="swiper__slide swiper-slide">
@@ -267,14 +270,16 @@
                   height="280" alt="тренер Александр Пашков">
               </picture>
             </div>
-            <h3 class="swiper-slide__title">Александр Пашков</h3>
             <div class="swiper-slide__text slide-text">
-              <span class="slide-text__subtitle">CrossFit</span>
-              <ol class="slide-text__list slide-list">
-                <li class="slide-list__item">Certified Level 3 Trainer</li>
-                <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
-                <li class="slide-list__item">Опыт — 6 лет</li>
-              </ol>
+              <h3 class="swiper-slide__title">Александр Пашков</h3>
+              <div class="slide-text__wrapper">
+                <span class="slide-text__subtitle">CrossFit</span>
+                <ul class="slide-text__list slide-list">
+                  <li class="slide-list__item">Certified Level 3 Trainer</li>
+                  <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
+                  <li class="slide-list__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </div>
           </li>
           <li class="swiper__slide swiper-slide">
@@ -286,19 +291,104 @@
                   height="280" alt="тренер Мария Кетова">
               </picture>
             </div>
-            <h3 class="swiper-slide__title">Мария Кетова</h3>
             <div class="swiper-slide__text slide-text">
-              <span class="slide-text__subtitle">CrossFit</span>
-              <ol class="slide-text__list slide-list">
-                <li class="slide-list__item">Certified Level 3 Trainer</li>
-                <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
-                <li class="slide-list__item">Опыт — 6 лет</li>
-              </ol>
+              <h3 class="swiper-slide__title">Мария Кетова</h3>
+              <div class="slide-text__wrapper">
+                <span class="slide-text__subtitle">CrossFit</span>
+                <ul class="slide-text__list slide-list">
+                  <li class="slide-list__item">Certified Level 3 Trainer</li>
+                  <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
+                  <li class="slide-list__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </div>
           </li>
-          <li class="swiper-slide">Slide 5</li>
+          <li class="swiper__slide swiper-slide">
+            <div class="swiper-slide__wrapper-img">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/card-1@1x.webp 1x, img/card-1@2x.webp 2x" width="260" height="300">
+                <img class="swiper-slide__img" src="img/card-1@1x.webp 1x" srcset="img/card-1@2x.webp 2x" width="227"
+                  height="280" alt="тренер Анна Павлова">
+              </picture>
+            </div>
+            <div class="swiper-slide__text slide-text">
+              <h3 class="swiper-slide__title">Анна Павлова</h3>
+              <div class="slide-text__wrapper">
+                <span class="slide-text__subtitle">CrossFit</span>
+                <ul class="slide-text__list slide-list">
+                  <li class="slide-list__item">Certified Level 3 Trainer</li>
+                  <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
+                  <li class="slide-list__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="swiper__slide swiper-slide">
+            <div class="swiper-slide__wrapper-img">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/card-2@1x.webp 1x, img/card-2@2x.webp 2x" width="260" height="300">
+                <img class="swiper-slide__img" src="img/card-2@1x.webp 1x" srcset="img/card-2@2x.webp 2x" width="227"
+                  height="280" alt="тренер Алексей Лавров">
+              </picture>
+            </div>
+            <div class="swiper-slide__text slide-text">
+              <h3 class="swiper-slide__title">Алексей Лавров</h3>
+              <div class="slide-text__wrapper">
+                <span class="slide-text__subtitle">CrossFit</span>
+                <ul class="slide-text__list slide-list">
+                  <li class="slide-list__item">Certified Level 3 Trainer</li>
+                  <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
+                  <li class="slide-list__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="swiper__slide swiper-slide">
+            <div class="swiper-slide__wrapper-img">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/card-3@1x.webp 1x, img/card-3@2x.webp 2x" width="260" height="300">
+                <img class="swiper-slide__img" src="img/card-3@1x.webp 1x" srcset="img/card-3@2x.webp 2x" width="227"
+                  height="280" alt="тренер Александр Пашков">
+              </picture>
+            </div>
+            <div class="swiper-slide__text slide-text">
+              <h3 class="swiper-slide__title">Александр Пашков</h3>
+              <div class="slide-text__wrapper">
+                <span class="slide-text__subtitle">CrossFit</span>
+                <ul class="slide-text__list slide-list">
+                  <li class="slide-list__item">Certified Level 3 Trainer</li>
+                  <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
+                  <li class="slide-list__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="swiper__slide swiper-slide">
+            <div class="swiper-slide__wrapper-img">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/card-4@1x.webp 1x, img/card-4@2x.webp 2x" width="260" height="300">
+                <img class="swiper-slide__img" src="img/card-4@1x.webp 1x" srcset="img/card-4@2x.webp 2x" width="227"
+                  height="280" alt="тренер Мария Кетова">
+              </picture>
+            </div>
+            <div class="swiper-slide__text slide-text">
+              <h3 class="swiper-slide__title">Мария Кетова</h3>
+              <div class="slide-text__wrapper">
+                <span class="slide-text__subtitle">CrossFit</span>
+                <ul class="slide-text__list slide-list">
+                  <li class="slide-list__item">Certified Level 3 Trainer</li>
+                  <li class="slide-list__item">Победитель чемпионата России по CrossFit </li>
+                  <li class="slide-list__item">Опыт — 6 лет</li>
+                </ul>
+              </div>
+            </div>
+          </li>
         </ul>
-        <button class="swiper__button-next swiper-button-next" type="button">
+        <button class="swiper__button-next" type="button">
           <svg class="swiper__next-svg" width="16" height="32">
             <use href="/__spritemap#sprite-jury-arrow"></use>
           </svg>

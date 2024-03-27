@@ -86,25 +86,6 @@
   color: $text-color-dark;
   transition: 0.3s ease-in-out;
 
-  &:hover {
-    color: $text-color-ligth;
-    background: $button-color-gradient;
-    border-image: $button-color-gradient;
-    border-image-slice: 1;
-  }
-
-  &:focus {
-    border: 2px solid #000000;
-    background: linear-gradient(97deg, rgba(237, 2, 51, 0.80) 17.6%, rgba(0, 62, 183, 0.80) 95.31%);
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.70);
-    background: $button-color-gradient;
-    border-image: $button-color-gradient;
-    border-image-slice: 1;
-  }
-
   &--disabled {
     background: transparent;
     border: 2px solid  $button-border-color-dark;
@@ -112,3 +93,21 @@
     pointer-events: none;
   }
 }
+  .subscription-list__item:hover .subscription-item__button{
+    color: $text-color-ligth;
+    background: $button-color-gradient;
+    border-image: $button-color-gradient;
+    border-image-slice: 1;
+  }
+
+  .subscription-list__item .subscription-item__button:focus {
+    border: 2px solid #000000;
+    background: linear-gradient(97deg, rgba(237, 2, 51, 0.80) 17.6%, rgba(0, 62, 183, 0.80) 95.31%);
+  }
+
+  .subscription-list__item .subscription-item__button:active {
+    color: rgba(255, 255, 255, 0.70);
+    background: $button-color-gradient;
+    border-image: $button-color-gradient;
+    border-image-slice: 1;
+  }

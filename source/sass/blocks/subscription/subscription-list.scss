@@ -16,17 +16,26 @@
 }
 
 .subscription-list__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 18px;
   width: 197px;
-  padding: 50px 46px;
+  padding: 43px 39px;
   background-color: $background-color-light;
+  border: 7px solid $background-color-light;
   overflow-wrap: break-word;
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    border-image: $button-color-gradient;
+    border-image-slice: 1;
+  }
 
   @media (min-width: $width-tablet) {
     gap: 22px;
-    padding: 65px;
+    padding: 58px;
     width: 250px;
   }
 

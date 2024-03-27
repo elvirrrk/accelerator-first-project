@@ -1,15 +1,14 @@
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 
 const mySwiper = new Swiper('.jury__swiper', { //eslint-disable-line
   modules: [Navigation],
   loop: true,
   grabCursor: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper__button-next',
+    prevEl: '.swiper__button-prev',
   },
   slidesPerView: 1,
   initialSlide: 2,

@@ -3,10 +3,20 @@
 }
 
 .about-media__img {
-  margin-bottom: 202px;
+  margin-bottom: 206px;
+  width: 320px;
+  height: 280px;
+  background-color: $background-color-light-extra;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 0;
+    width: 678px;
+    height: 345px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 660px;
+    height: 400px;
   }
 }
 
@@ -19,14 +29,14 @@
 
   @media (min-width: $width-tablet) {
     left: 30%;
-    bottom: -80px;
+    bottom: -84px;
     width: 270px;
     height: 170px;
     background-image: image-set(url("../../../img/tablet-video-back@1x.webp") 1x, url("../../../img/tablet-video-back@2x.webp") 2x);
   }
 
   @media (min-width: $width-desktop) {
-    bottom: -110px;
+    bottom: -114px;
     left: -100px;
     width: 360px;
     height: 230px;

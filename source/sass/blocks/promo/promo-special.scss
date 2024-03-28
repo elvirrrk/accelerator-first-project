@@ -1,0 +1,24 @@
+.promo__special-wrapper {
+  padding: 30px;
+  background-color: $banner-background-color;
+
+  @media (min-width: $width-tablet) {
+    padding: 40px 25px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 40px 45px;
+  }
+}
+
+.promo__special {
+  width: 260px;
+
+  @media (min-width: $width-tablet) {
+    width: 228px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 190px;
+  }
+}

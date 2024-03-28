@@ -2,14 +2,17 @@
   display: flex;
   justify-content: space-between;
   padding: 14px 15px 15px;
+  width: 290px;
 
   @media (min-width: $width-tablet) {
     padding: 29px 45px 28px;
+    width: 678px;
   }
 
   @media (min-width: $width-desktop) {
     padding: 28px 103px 26px;
     align-items: center;
+    width: 1160px;
   }
 }
 
@@ -53,7 +56,6 @@
 
   @media (min-width: $width-tablet) {
     @include tablet-h4;
-    letter-spacing: 0.52px;
   }
 
   @media (min-width: $width-desktop) {

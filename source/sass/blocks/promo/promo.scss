@@ -1,0 +1,41 @@
+.promo {
+  padding: 40px 0;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px 45px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 100px 103px;
+  }
+}
+
+.promo__title {
+  @include mobile-h3;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-h3;
+  }
+
+  @media (min-width: $width-desktop) {
+    @include desktop-h3;
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width-tablet) {
+    width: 678px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-direction: row;
+    width: 1160px;
+  }
+}

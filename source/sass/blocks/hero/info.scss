@@ -3,17 +3,21 @@
   flex-direction: column;
   align-items: center;
   padding: 0 15px 31px;
+  margin: 0 auto;
+  width: 290px;
 
   @media (min-width: $width-tablet) {
     flex-direction: row-reverse;
     padding: 0 45px 98px;
     gap: 30px;
+    width: 678px;
   }
 
   @media (min-width: $width-desktop) {
     padding: 0px 175px 118px 250px;
     gap: 56px;
     justify-content: space-between;
+    width: 941px;
   }
 }
 

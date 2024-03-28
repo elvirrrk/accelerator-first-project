@@ -11,6 +11,7 @@
 
   @media (min-width: $width-desktop) {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }

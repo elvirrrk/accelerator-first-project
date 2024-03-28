@@ -45,10 +45,15 @@
   right: 25px;
   left: 25px;
   bottom: 25px;
-  width: 210px;
-  height: 250px;
+  width: 177px;
+  height: 230px;
   transition: transform 0.3s;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    width: 210px;
+    height: 250px;
+  }
 }
 
 .slide-text__wrapper {
@@ -66,7 +71,11 @@
   @include desktop-h6;
   color: $text-color-ligth;
   word-break: break-all;
-  width: 210px;
+  width: 177px;
+  
+  @media (min-width: $width-tablet) {
+    width: 210px;
+  }
 }
 
 .slide-text__subtitle {
@@ -95,10 +104,6 @@
 }
 
 //HOVER EFFECT
-
-.swiper__slide:hover .swiper-slide__wrapper-img {
-  filter: drop-shadow(0px 0px 35px rgba(42, 59, 99, 0.17));
-}
 
 .swiper__slide:hover .swiper-slide__title {
 	position: unset;
@@ -161,7 +166,7 @@
 
 .swiper__button-prev {
   @media (min-width: $width-tablet) {
-    left: 26px;
+    left: -33px;
     top: 52%;
   }
 
@@ -173,7 +178,7 @@
 
 .swiper__button-next {
   @media (min-width: $width-tablet) {
-    right: -72px;
+    right: -33px;
     top: 52%;
   }
 

@@ -1,9 +1,11 @@
 .jury {
   position: relative;
   padding: 40px 46px;
+  width: 228px;
+  margin: 0 auto;
 
   @media (min-width: $width-tablet) {
-    padding: 30px 5px 60px 104px;
+    padding: 30px 45px 60px;
     width: 560px;
   }
 

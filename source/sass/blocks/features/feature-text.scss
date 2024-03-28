@@ -1,0 +1,83 @@
+.features__text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  @media (min-width: $width-desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.features__text:not(:last-of-type) {
+  margin-bottom: 35px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.features__text > div:first-of-type {
+  @include text-color-gradient;
+  display: flex;
+  flex-direction: column;
+}
+
+//span текст цифры 1ого div
+
+.features__text > div:first-of-type > span:first-of-type {
+  @include mobile-number-l;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-desktop-number-l;
+  }
+}
+
+//span текст 1ого div
+
+.features__text > div:first-of-type > span:not(:first-of-type) {
+  @include mobile-text-s;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-desktop-text-s;
+  }
+}
+
+//title 2ого div
+
+.features__text > div:not(:first-of-type) > span:first-of-type {
+  display: block;
+  @include mobile-h6;
+  margin-bottom: 12px;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-h6;
+  }
+
+  @media (min-width: $width-desktop) {
+    @include desktop-h6;
+    margin-bottom: 8px;
+  }
+}
+
+.features__text > div:not(:first-of-type) {
+  @media (min-width: $width-desktop) {
+    width: 210px;
+  }
+}
+
+//p текст 2ого div
+
+.features__text > div:not(:first-of-type) > p {
+  @include mobile-text-m;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-desktop-text-m;
+  }
+}

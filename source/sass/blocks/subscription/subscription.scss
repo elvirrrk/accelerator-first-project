@@ -1,24 +1,37 @@
 .subscription {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 45px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   background-color: $background-color-light-extra;
 
   @media (min-width: $width-tablet) {
-    padding: 60px 45px;
     background: $background-color-light-extra image-set(url("../../../img/tablet-weight-plates@1x.webp") 1x, url("../../../img/tablet-weight-plates@2x.webp") 2x) no-repeat;
     background-size: 325px 385px;
     background-position: bottom 2px right 0;
   }
 
   @media (min-width: $width-desktop) {
-    padding: 100px 103px;
     background: $background-color-light-extra image-set(url("../../../img/desktop-weight-plates@1x.webp") 1x, url("../../../img/desktop-weight-plates@2x.webp") 2x) no-repeat;
     background-size: 305px 447px;
     background-position: bottom 1px right 0;
+  }
+}
+
+.subscription__wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 45px;
+  width: 230px;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px 45px;
+    width: 678px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 100px 103px;
+    width: 1160px;
   }
 }
 

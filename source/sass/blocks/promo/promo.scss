@@ -14,14 +14,16 @@
 
 .promo__title {
   @include mobile-h3;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 
   @media (min-width: $width-tablet) {
     @include tablet-h3;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $width-desktop) {
     @include desktop-h3;
+    margin-bottom: 70px;
   }
 }
 
@@ -36,6 +38,7 @@
 
   @media (min-width: $width-desktop) {
     flex-direction: row;
+    align-items: flex-end;
     width: 1160px;
   }
 }

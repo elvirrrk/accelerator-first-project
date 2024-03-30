@@ -1,0 +1,63 @@
+.faq__list {
+  @include reset-list;
+}
+
+.faq-list__item {
+  position: relative;
+  border-bottom: 1px solid #74819c;
+  padding: 20px 0;
+
+  &:first-child {
+    border-top: 1px solid #74819c;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding: 25px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 31px 0;
+  }
+}
+
+.faq-list__item>input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.faq-list__item > label {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @include mobile-h5;
+
+  @media (min-width: $width-tablet) {
+    @include tablet-h5;
+  }
+
+  @media (min-width: $width-desktop) {
+    @include desktop-h5;
+  }
+
+  &::after {
+    content: "";
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid $button-border-color-dark-extra;
+    transition: all 0.5s;
+
+    @media (min-width: $width-tablet) {
+      padding: 10px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+.faq-list__item > p {
+  display: none;
+}
+
+// input:checked {
+//   display: block;
+// } сделать для р

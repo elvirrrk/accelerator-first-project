@@ -6,55 +6,61 @@
 // Global
 // ---------------------------------
 
-@import "global/global.scss";
-@import "global/mixin.scss";
-@import "global/variables.scss";
-@import "global/visually-hidden.scss";
-@import "global/fonts.scss";
-@import "global/container.scss";
+@import "global/global";
+@import "global/mixin";
+@import "global/variables";
+@import "global/visually-hidden";
+@import "global/fonts";
+@import "global/container";
 
 // Blocks
 // ---------------------------------
 
-//hero
+// hero
 
-@import "blocks/hero/hero.scss";
-@import "blocks/hero/header.scss";
-@import "blocks/hero/info.scss";
-@import "blocks/hero/hero-text.scss";
+@import "blocks/hero/hero";
+@import "blocks/hero/header";
+@import "blocks/hero/info";
+@import "blocks/hero/hero-text";
 
-//about
+// about
 
-@import "blocks/about/about.scss";
-@import "blocks/about/about-text.scss";
-@import "blocks/about/about-media.scss";
+@import "blocks/about/about";
+@import "blocks/about/about-text";
+@import "blocks/about/about-media";
 
-//subscription
+// subscription
 
-@import "blocks/subscription/subscription.scss";
-@import "blocks/subscription/subscription-button-list.scss";
-@import "blocks/subscription/subscription-list.scss";
-@import "blocks/subscription/subscription-item.scss";
+@import "blocks/subscription/subscription";
+@import "blocks/subscription/subscription-button-list";
+@import "blocks/subscription/subscription-list";
+@import "blocks/subscription/subscription-item";
 
-//billboard
+// billboard
 
-@import "blocks/billboard/billboard.scss";
-@import "blocks/billboard/billboard-info.scss";
-@import "blocks/billboard/billboard-img.scss";
+@import "blocks/billboard/billboard";
+@import "blocks/billboard/billboard-info";
+@import "blocks/billboard/billboard-img";
 
-//jury
+// jury
 
-@import "blocks/jury/jury.scss";
-@import "blocks/jury/swiper.scss";
+@import "blocks/jury/jury";
+@import "blocks/jury/swiper";
 
-//features
+// features
 
-@import "blocks/features/features.scss";
-@import "blocks/features/feature-text.scss";
-@import "blocks/features/feature-accent-text.scss";
+@import "blocks/features/features";
+@import "blocks/features/feature-text";
+@import "blocks/features/feature-accent-text";
 
-//promo
+// promo
 
-@import "blocks/promo/promo.scss";
-@import "blocks/promo/promo-special.scss";
-@import "blocks/promo/promo-another.scss";
+@import "blocks/promo/promo";
+@import "blocks/promo/promo-special";
+@import "blocks/promo/promo-another";
+
+// faq
+
+@import "blocks/faq/faq.scss";
+@import "blocks/faq/faq-button.scss";
+@import "blocks/faq/faq-list.scss";

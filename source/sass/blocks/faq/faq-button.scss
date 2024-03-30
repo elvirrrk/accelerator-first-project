@@ -1,0 +1,48 @@
+.faq-button__item {
+  padding: 14px 22px;
+  width: 140px;
+  font-family: $font-family-main;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  word-break: break-all;
+  border: 1px solid rgba(16, 38, 84, 0.20);
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $width-tablet) {
+    text-align: center;
+    padding: 17px 35px 16px;
+    width: 162px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 19px 48px 15px;
+    width: 260px;
+  }
+
+  &:hover {
+    border-color: $button-border-color-dark;
+  }
+
+  &:focus {
+    border-color: $button-border-color-dark;
+    background-color: $background-color-light;
+  }
+
+  &:disabled {
+    background: transparent;
+    border: 1px solid rgba(16, 38, 84, 0.20);
+    color: #c8c9cc;
+    pointer-events: none;
+  }
+
+  &--checked {
+    color: $text-color-ligth;
+    background: $button-color-gradient;
+    border-image: $button-color-gradient;
+    border-image-slice: 1;
+  }
+}

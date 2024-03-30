@@ -27,15 +27,16 @@
   justify-content: center;
   flex-wrap: wrap;
   z-index: 0;
-  gap: 10px;
   margin: 69px auto 9px;
 
   @include mobile-number-m;
+
   color: $text-color-accent;
   gap: 11px;
 
   @media (min-width: $width-tablet) {
     @include tablet-desktop-number-m;
+
     margin: 60px auto 0;
     gap: 14px;
   }
@@ -44,13 +45,16 @@
     content: attr(data-price);
     position: absolute;
     z-index: -1;
+
     @include mobile-number-xl;
+
     color: #e8e8e8;
     opacity: 0.48;
     top: -55px;
 
     @media (min-width: $width-tablet) {
       @include tablet-desktop-number-xl;
+
       top: -61px;
     }
   }
@@ -93,21 +97,22 @@
     pointer-events: none;
   }
 }
-  .subscription-list__item:hover .subscription-item__button{
-    color: $text-color-ligth;
-    background: $button-color-gradient;
-    border-image: $button-color-gradient;
-    border-image-slice: 1;
-  }
 
-  .subscription-list__item .subscription-item__button:focus {
-    border: 2px solid #000000;
-    background: linear-gradient(97deg, rgba(237, 2, 51, 0.80) 17.6%, rgba(0, 62, 183, 0.80) 95.31%);
-  }
+.subscription-list__item:hover .subscription-item__button {
+  color: $text-color-ligth;
+  background: $button-color-gradient;
+  border-image: $button-color-gradient;
+  border-image-slice: 1;
+}
 
-  .subscription-list__item .subscription-item__button:active {
-    color: rgba(255, 255, 255, 0.70);
-    background: $button-color-gradient;
-    border-image: $button-color-gradient;
-    border-image-slice: 1;
-  }
+.subscription-list__item .subscription-item__button:focus {
+  border: 2px solid #000000;
+  background:  $button-color-gradient;
+}
+
+.subscription-list__item .subscription-item__button:active {
+  color: rgba(255, 255, 255, 0.7);
+  background: $button-color-gradient;
+  border-image: $button-color-gradient;
+  border-image-slice: 1;
+}

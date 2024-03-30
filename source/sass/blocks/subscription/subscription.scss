@@ -36,19 +36,22 @@
 }
 
 .subscription__title {
-  margin: 0 0 29px 0;
+  margin: 0 0 29px;
 
   @include mobile-h3;
+
   color: $text-color-dark;
 
   @media (min-width: $width-tablet) {
     @include tablet-h3;
-    margin: 0 0 35px 0;
+
+    margin: 0 0 35px;
   }
 
   @media (min-width: $width-desktop) {
     @include desktop-h3;
-    margin: 0 0 20px 0;
+
+    margin: 0 0 20px;
   }
 }
 

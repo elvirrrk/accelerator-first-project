@@ -17,11 +17,13 @@
 
 .jury__title {
   @include mobile-h3;
+
   margin: 0 0 20px;
   text-align: center;
 
   @media (min-width: $width-tablet) {
     @include desktop-h3;
+
     margin: 0 0 46px;
   }
 

@@ -39,24 +39,26 @@
 
 .promo__another > h3 {
   @include mobile-h4;
+
   margin: 0 0 20px;
 
   @media (min-width: $width-tablet) {
     @include desktop-h4;
-    margin: 0 0 10px;
-  }
 
-  @media (min-width: $width-desktop) {
+    margin: 0 0 10px;
   }
 }
 
 .promo__another > p {
   display: block;
+
   @include mobile-text-m;
+
   margin: 0 0 17px;
 
   @media (min-width: $width-tablet) {
     @include tablet-desktop-text-m;
+
     margin: 0 0 30px;
   }
 

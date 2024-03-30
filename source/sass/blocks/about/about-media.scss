@@ -55,7 +55,7 @@
   left: 0;
 }
 
-//video button
+// video button
 
 .video-preview__button {
   position: absolute;
@@ -123,16 +123,16 @@
 
 .video-preview__button:hover .video-button__arrow {
   fill: $button-border-color-dark;
-  fill-opacity:0.6;
+  fill-opacity: 0.6;
 }
 
 .video-preview__button:focus .video-button__arrow,
 .video-preview__button:active .video-button__arrow {
   fill: $button-border-color-dark;
-  fill-opacity:1;
+  fill-opacity: 1;
 }
 
 .video-preview__button:disabled .video-button__arrow {
   fill: $button-border-color-dark;
-  fill-opacity:1;
+  fill-opacity: 1;
 }

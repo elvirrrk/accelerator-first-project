@@ -68,10 +68,12 @@
 
 .promo__special > h3 {
   @include mobile-h4;
+
   margin: 0 0 9px;
 
   @media (min-width: $width-tablet) {
     @include tablet-h4;
+
     margin: 0 0 20px;
   }
 
@@ -82,22 +84,28 @@
 
 .promo__special > span {
   display: block;
+
   @include mobile-number-l;
+
   margin: 0 0 28px;
 
   @media (min-width: $width-tablet) {
     @include tablet-desktop-number-l;
+
     margin: 0 0 40px;
   }
 }
 
 .promo__special > p {
   display: block;
+
   @include mobile-text-l;
+
   margin: 0 0 25px;
 
   @media (min-width: $width-tablet) {
     @include tablet-desktop-text-l;
+
     margin: 0 0 40px;
   }
 }

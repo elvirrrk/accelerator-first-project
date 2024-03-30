@@ -1,5 +1,6 @@
 .subscription__button-list {
   @include reset-list;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 10px;
@@ -19,7 +20,7 @@
 }
 
 .buttons-list__item {
-  border-bottom: 2px solid rgba(120, 120, 120, 0.20);
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   width: 100%;
 }
 
@@ -37,7 +38,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
-  color: rgba(16, 38, 84, 0.50);
+  color: rgba(16, 38, 84, 0.5);
   transition: 0.3s ease-in-out;
   cursor: pointer;
 
@@ -53,18 +54,18 @@
   }
 
   &:hover {
-    color: rgba(16, 38, 84, 0.70);
-    box-shadow: 0 2px 0px #787878;
+    color: rgba(16, 38, 84, 0.7);
+    box-shadow: 0 2px 0 #787878;
   }
 
   &:focus {
     color: $text-color-dark;
-    box-shadow: 0 2px 0px $button-border-color-dark;
+    box-shadow: 0 2px 0 $button-border-color-dark;
   }
 
   &:active,
   &--clicked {
     color: $text-color-dark;
-    box-shadow: 0 2px 0px $button-color-tabs;
+    box-shadow: 0 2px 0 $button-color-tabs;
   }
 }

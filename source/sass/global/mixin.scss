@@ -10,19 +10,18 @@
   border: none;
 }
 
-//supported in WebKit-based browsers
+// supported in WebKit-based browsers
 
 @mixin text-color-gradient {
   background: linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
   background-clip: text;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #0041ca;
 }
 
-//HEADINGS
+// HEADINGS
 // ---------------------------------
-//Mobile
+// Mobile
 
 @mixin mobile-h1 {
   font-family: $font-family-extra;
@@ -66,7 +65,7 @@
   line-height: 20px;
 }
 
-//Tablet
+// Tablet
 
 @mixin tablet-h1 {
   font-family: $font-family-extra;
@@ -110,7 +109,7 @@
   line-height: 20px;
 }
 
-//Desktop
+// Desktop
 
 @mixin desktop-h1 {
   font-family: $font-family-extra;
@@ -154,9 +153,9 @@
   line-height: 22px;
 }
 
-//TEXT
+// TEXT
 // ---------------------------------
-//Mobile
+// Mobile
 
 @mixin mobile-text-l {
   font-size: 16px;
@@ -176,7 +175,7 @@
   line-height: 20px;
 }
 
-//Tablet & Desktop
+// Tablet & Desktop
 
 @mixin tablet-desktop-text-l {
   font-size: 18px;
@@ -196,9 +195,9 @@
   line-height: 22px;
 }
 
-//NUMBERS
+// NUMBERS
 // ---------------------------------
-//Mobile
+// Mobile
 
 @mixin mobile-number-xl {
   font-size: 80px;
@@ -224,7 +223,7 @@
   line-height: 24px;
 }
 
-//Tablet & Desktop
+// Tablet & Desktop
 
 @mixin tablet-desktop-number-xl {
   font-size: 100px;

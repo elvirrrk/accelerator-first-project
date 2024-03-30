@@ -24,11 +24,10 @@
 
 .features__text > div:first-of-type {
   @include text-color-gradient;
+
   display: flex;
   flex-direction: column;
 }
-
-//span текст цифры 1ого div
 
 .features__text > div:first-of-type > span:first-of-type {
   @include mobile-number-l;
@@ -38,8 +37,6 @@
   }
 }
 
-//span текст 1ого div
-
 .features__text > div:first-of-type > span:not(:first-of-type) {
   @include mobile-text-s;
 
@@ -48,11 +45,11 @@
   }
 }
 
-//title 2ого div
-
 .features__text > div:not(:first-of-type) > span:first-of-type {
   display: block;
+
   @include mobile-h6;
+
   margin-bottom: 12px;
 
   @media (min-width: $width-tablet) {
@@ -61,6 +58,7 @@
 
   @media (min-width: $width-desktop) {
     @include desktop-h6;
+
     margin-bottom: 8px;
   }
 }
@@ -71,10 +69,9 @@
   }
 }
 
-//p текст 2ого div
-
 .features__text > div:not(:first-of-type) > p {
   @include mobile-text-m;
+
   margin: 0;
 
   @media (min-width: $width-tablet) {

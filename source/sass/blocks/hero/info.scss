@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding: 0px 175px 118px 250px;
+    padding: 0 175px 118px 250px;
     gap: 56px;
     justify-content: space-between;
     width: 941px;
@@ -52,7 +52,7 @@
   &:focus {
     color: $text-color-accent;
     border-color: #000000;
-    background-color: rgba(255, 255, 255, 0.80);
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   &:active {

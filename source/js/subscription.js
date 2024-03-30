@@ -9,21 +9,21 @@ subscriptionLists.forEach((elem, i) => {
 });
 
 buttonList.addEventListener('click', (evt) => {
-  if (evt.target.id) {
-    for (let i = 0; i < buttons.length; i++) {
-      buttons[i].classList.remove('buttons-list__button--clicked');
-    }
+  const currentButtonAttr = evt.target.getAttribute('data-subscription');
+
+  if (currentButtonAttr) {
+    buttons.forEach((button) => button.classList.remove('buttons-list__button--clicked'));
 
     evt.target.classList.add('buttons-list__button--clicked');
 
-    for (let i = 0; i < subscriptionLists.length; i++) {
-      if (subscriptionLists[i].id === evt.target.id) {
-        subscriptionLists[i].style.display = 'flex';
+    subscriptionLists.forEach((list) => {
+      if (list.getAttribute('data-subscription') === currentButtonAttr) {
+        list.style.display = 'flex';
       }
 
-      if (subscriptionLists[i].id !== evt.target.id) {
-        subscriptionLists[i].style.display = 'none';
+      if (list.getAttribute('data-subscription') !== currentButtonAttr) {
+        list.style.display = 'none';
       }
-    }
+    });
   }
 });

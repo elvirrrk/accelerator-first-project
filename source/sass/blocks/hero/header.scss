@@ -23,13 +23,15 @@
 .header__phone {
   position: relative;
   text-decoration: none;
+
   @include mobile-h4;
+
   letter-spacing: 0;
   color: $text-color-ligth;
   transition: all 0.3s;
 
   &:hover {
-    color: rgba(28, 51, 116, 0.50);
+    color: rgba(28, 51, 116, 0.5);
   }
 
   &:focus {
@@ -50,7 +52,7 @@
   }
 
   &:disabled {
-    color: #f8f9fC;
+    color: #f8f9fc;
     opacity: 0.5;
   }
 
@@ -60,6 +62,7 @@
 
   @media (min-width: $width-desktop) {
     @include desktop-h4;
+
     letter-spacing: 0.1px;
   }
 }

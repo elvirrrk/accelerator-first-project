@@ -7,8 +7,8 @@ const mySwiper = new Swiper('.jury__swiper', { //eslint-disable-line
   loop: true,
   grabCursor: true,
   navigation: {
-    nextEl: '.swiper__button-next',
-    prevEl: '.swiper__button-prev',
+    nextEl: '.jury-swiper__button-next',
+    prevEl: '.jury-swiper__button-prev',
   },
   slidesPerView: 1,
   initialSlide: 2,

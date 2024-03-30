@@ -34,14 +34,16 @@
   }
 }
 
-//number
+// number
 
 .feature-accent__block > span:first-of-type {
   @include mobile-number-l;
+
   margin-bottom: 5px;
 
   @media (min-width: $width-tablet) {
     @include tablet-desktop-number-l;
+
     margin-bottom: 25px;
   }
 
@@ -50,27 +52,31 @@
   }
 }
 
-//title
+// title
 
 .feature-accent__block > span:not(:first-of-type) {
   @include mobile-h4;
+
   margin-bottom: 20px;
 
   @media (min-width: $width-tablet) {
     @include tablet-h4;
+
     margin-bottom: 25px;
   }
 
   @media (min-width: $width-desktop) {
     @include desktop-h4;
+
     margin-bottom: 30px;
   }
 }
 
-//text
+// text
 
 .feature-accent__block > p {
   @include mobile-text-m;
+
   margin: 0;
 
   @media (min-width: $width-tablet) {

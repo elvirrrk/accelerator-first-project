@@ -27,17 +27,20 @@
 
 .billboard-text__title {
   @include mobile-h2;
+
   margin: 0;
   color: $text-color-ligth;
   width: 117px;
 
   @media (min-width: $width-tablet) {
     @include tablet-h2;
+
     width: 100px;
   }
 
   @media (min-width: $width-desktop) {
     @include desktop-h2;
+
     width: 168px;
   }
 }
@@ -74,6 +77,7 @@
 .billboard-date__title,
 .billboard-time__title {
   @include mobile-text-l;
+
   color: $text-color-ligth;
 
   @media (min-width: $width-tablet) {
@@ -110,6 +114,7 @@
 .billboard-date__day,
 .billboard-time__time-start {
   @include mobile-number-s;
+
   color: $text-color-ligth;
 
   @media (min-width: $width-tablet) {
@@ -135,18 +140,20 @@
 
 .billboard__label {
   @include mobile-text-l;
+
   color: $text-color-ligth;
-  margin: 0 0 16px 0;
+  margin: 0 0 16px;
   width: 200px;
 
   @media (min-width: $width-tablet) {
     @include tablet-desktop-text-l;
-    margin: 0 0 10px 0;
+
+    margin: 0 0 10px;
     width: 220px;
   }
 
   @media (min-width: $width-desktop) {
-    margin: 0 0 30px 0;
+    margin: 0 0 30px;
     width: 340px;
   }
 }
@@ -184,7 +191,7 @@
   &:focus {
     color: $text-color-accent;
     border-color: #000000;
-    background-color: rgba(255, 255, 255, 0.80);
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   &:active {

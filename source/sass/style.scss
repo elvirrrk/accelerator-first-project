@@ -61,6 +61,11 @@
 
 // faq
 
-@import "blocks/faq/faq.scss";
-@import "blocks/faq/faq-button.scss";
-@import "blocks/faq/faq-list.scss";
+@import "blocks/faq/faq";
+@import "blocks/faq/faq-button";
+@import "blocks/faq/faq-list";
+
+// reviews
+
+@import "blocks/reviews/reviews-swiper";
+@import "blocks/reviews/reviews-swiper-slide";

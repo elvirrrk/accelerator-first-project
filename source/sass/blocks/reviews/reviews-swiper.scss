@@ -1,0 +1,141 @@
+.reviews {
+  position: relative;
+  margin: 0 auto;
+  padding: 40px;
+  width: 240px;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px 45px;
+    width: 678px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 100px 103px;
+    width: 672px;
+  }
+}
+
+.reviews__title {
+  @include mobile-h3;
+
+  margin: 0 0 40px;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    @include desktop-h3;
+
+    margin: 0 0 35.5px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0 0 75px;
+  }
+}
+
+.reviews__swiper {
+  display: flex;
+  width: 240px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: $width-tablet) {
+    width: 500px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 560px;
+  }
+}
+
+.reviews-swiper__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+
+// buttons
+.reviews-swiper__button-prev,
+.reviews-swiper__button-next {
+  position: absolute;
+  visibility: hidden;
+  background-color: transparent;
+  border: none;
+  width: 56px;
+  height: 56px;
+
+  @media (min-width: $width-tablet) {
+    visibility: visible;
+    width: 56px;
+    height: 56px;
+    top: 54.2%;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: 56.6%;
+  }
+
+  &:hover {
+    border-radius: 56px;
+    outline: 1px solid $button-border-color-dark;
+  }
+
+  &:focus {
+    border-radius: 56px;
+    outline: 1px solid $button-border-color-dark;
+    background-color: #e8e8e8;
+  }
+
+  &:active {
+    border-radius: 56px;
+    outline: 1px solid $button-border-color-dark;
+    background-color: $button-border-color-dark;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    pointer-events: none;
+  }
+}
+
+.reviews-swiper__button-prev {
+  @media (min-width: $width-tablet) {
+    left: 3.3%;
+  }
+
+  @media (min-width: $width-desktop) {
+    left: 9.5%;
+  }
+}
+
+.reviews-swiper__button-next {
+  @media (min-width: $width-tablet) {
+    right: 3.3%;
+  }
+
+  @media (min-width: $width-desktop) {
+    right: 9.5%;
+  }
+}
+
+.reviews-swiper__next-svg,
+.reviews-swiper__prev-svg {
+  stroke: #102654;
+}
+
+.reviews-swiper__next-svg {
+  transform: rotate(180deg);
+}
+
+.reviews-swiper__button-prev:active .reviews-swiper__prev-svg,
+.reviews-swiper__button-next:active .reviews-swiper__next-svg {
+  stroke: $text-color-ligth;
+}
+
+.reviews-swiper__button-prev:disabled .reviews-swiper__prev-svg,
+.reviews-swiper__button-next:disabled .reviews-swiper__next-svg {
+  stroke: rgba(16, 38, 84, 0.3);
+}

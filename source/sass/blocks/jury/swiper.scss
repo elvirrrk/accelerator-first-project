@@ -16,7 +16,7 @@
   @include reset-list;
 }
 
-.swiper-slide {
+.jury-swiper__slide {
   display: flex;
   justify-content: center;
 }
@@ -110,18 +110,18 @@
 
 // HOVER EFFECT
 
-.swiper-slide:hover .swiper-slide__title {
+.jury-swiper__slide:hover .swiper-slide__title {
   position: unset;
   margin: 0 0 8px;
 }
 
-.swiper-slide:hover .slide-text__wrapper {
+.jury-swiper__slide:hover .slide-text__wrapper {
   opacity: 1;
   display: flex;
   flex-direction: column;
 }
 
-.swiper-slide:hover .swiper-slide__wrapper-img::before {
+.jury-swiper__slide:hover .swiper-slide__wrapper-img::before {
   content: "";
   position: absolute;
   width: 100%;

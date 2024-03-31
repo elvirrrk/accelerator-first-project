@@ -6,7 +6,7 @@
   font-weight: 400;
   line-height: 16px;
   word-break: break-all;
-  border: 1px solid rgba(16, 38, 84, 0.20);
+  border: 1px solid rgba(16, 38, 84, 0.2);
   background-color: transparent;
   cursor: pointer;
 
@@ -34,7 +34,7 @@
 
   &:disabled {
     background: transparent;
-    border: 1px solid rgba(16, 38, 84, 0.20);
+    border: 1px solid rgba(16, 38, 84, 0.2);
     color: #c8c9cc;
     pointer-events: none;
   }

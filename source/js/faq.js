@@ -2,6 +2,8 @@ const buttonFaqList = document.querySelector('.faq__buttons');
 const buttonsFaq = document.querySelectorAll('.faq-button__item');
 const faqList = document.querySelectorAll('.faq__list');
 
+// кнопки разделов
+
 faqList.forEach((elem, index) => {
   if(index !== 0) {
     elem.style.display = 'none';

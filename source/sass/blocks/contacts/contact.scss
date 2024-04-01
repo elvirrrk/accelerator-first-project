@@ -1,0 +1,79 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width-desktop) {
+    flex-direction: row;
+  }
+  //не указываем здесь паддинг и размер, только расположение блоков
+}
+
+.contact__info-wrapper {
+  background-color: $background-color-dark;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 290px;
+  text-align: center;
+  gap: 36px;
+
+  &--first {
+    @media (max-width: 767px) {
+    padding: 70px 15px;
+    }
+  }
+
+  &--second {
+    @media (max-width: 767px) {
+    padding: 40px 15px;
+    gap: 42px;
+    text-align: left;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    margin: 0 auto;
+    padding: 60px 45px;
+    width: 440px;
+    justify-content: center;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 60px 103px;
+    width: 477px;
+  }
+}
+
+.contact-info__title {
+  @include mobile-h3;
+  margin: 0;
+  text-align: left;
+
+  @media (min-width: $width-tablet) {
+    @include desktop-h3;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+    text-align: left;
+  }
+
+  &--first {
+    color: $text-color-ligth;
+  }
+
+  &--second {
+    color: $text-color-dark;
+  }
+}
+
+.contact-info__form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}

@@ -29,7 +29,7 @@
 
   @media (min-width: $width-tablet) {
     left: 30%;
-    bottom: -84px;
+    bottom: -85px;
     width: 270px;
     height: 170px;
     background-image: image-set(url("../../../img/tablet-video-back@1x.webp") 1x, url("../../../img/tablet-video-back@2x.webp") 2x);
@@ -59,8 +59,8 @@
 
 .video-preview__button {
   position: absolute;
-  top: 28%;
-  left: 37%;
+  top: 48px;
+  left: 118px;
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -68,7 +68,8 @@
   transition: all 0.3s;
 
   @media (min-width: $width-tablet) {
-    left: 35%;
+    top: 28.4%;
+    left: 34.7%;
   }
 
   @media (min-width: $width-desktop) {

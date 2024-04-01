@@ -20,13 +20,13 @@
   <main>
     <div class="hero" data-test="hero">
       <div class="hero__header header">
-        <a class="header__logo" href="#">
+        <div class="header__logo">
           <picture>
             <source type="image/svg+xml" media="(min-width: 1366px)" srcset="img/logo.svg" width="130" height="26">
             <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo.svg" width="110" height="22">
             <img src="img/logo.svg" width="100" height="20" alt="логотип Фитнес центра">
           </picture>
-        </a>
+        </div>
         <a class="header__phone" href="tel:+78005555555">8 800 555-55-55</a>
       </div>
       <div class="hero__info info">
@@ -50,7 +50,7 @@
               <li class="hero-list__item">Кардио-зона</li>
             </ul>
           </div>
-          <a class="info__button" href="#">Купить абонемент</a>
+          <a class="info__button" href="#subscription">Купить абонемент</a>
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@
         </div>
       </div>
     </div>
-    <div class="subscription" data-test="price">
+    <div class="subscription" id="subscription" data-test="price">
       <div class="subscription__wrapper">
         <h2 class="subscription__title">Абонементы</h2>
         <ul class="subscription__button-list buttons-list">
@@ -137,40 +137,40 @@
         <ul class="subscription__list subscription-list" data-subscription="six-month">
           <li class="subscription-list__item subscription-item">
             <h3 class="subscription-item__title">С тренером</h3>
-            <span class="subscription-item__subtitle">X занятий</span>
-            <p class="subscription-item__price" data-price="X">X</p>
+            <span class="subscription-item__subtitle">12 занятий</span>
+            <p class="subscription-item__price" data-price="30&nbsp;000">30&nbsp;000</p>
             <a class="subscription-item__button" href="#">Купить абонемент</a>
           </li>
           <li class="subscription-list__item subscription-item">
             <h3 class="subscription-item__title">Дневной</h3>
             <span class="subscription-item__subtitle">с 8:00 до 17:00</span>
-            <p class="subscription-item__price" data-price="X">X</p>
+            <p class="subscription-item__price" data-price="10&nbsp;200">10&nbsp;200</p>
             <a class="subscription-item__button" href="#">Купить абонемент</a>
           </li>
           <li class="subscription-list__item subscription-item">
             <h3 class="subscription-item__title">Полный день</h3>
             <span class="subscription-item__subtitle">с 8:00 до 22:00</span>
-            <p class="subscription-item__price" data-price="X">X</p>
+            <p class="subscription-item__price" data-price="16&nbsp;200">16&nbsp;200</p>
             <a class="subscription-item__button" href="#">Купить абонемент</a>
           </li>
         </ul>
         <ul class="subscription__list subscription-list" data-subscription="twelve-month">
           <li class="subscription-list__item subscription-item">
             <h3 class="subscription-item__title">С тренером</h3>
-            <span class="subscription-item__subtitle">X занятий</span>
-            <p class="subscription-item__price" data-price="X">X</p>
+            <span class="subscription-item__subtitle">12 занятий</span>
+            <p class="subscription-item__price" data-price="60&nbsp;000">60&nbsp;000</p>
             <a class="subscription-item__button" href="#">Купить абонемент</a>
           </li>
           <li class="subscription-list__item subscription-item">
             <h3 class="subscription-item__title">Дневной</h3>
             <span class="subscription-item__subtitle">с 8:00 до 17:00</span>
-            <p class="subscription-item__price" data-price="X">X</p>
+            <p class="subscription-item__price" data-price="20&nbsp;400">20&nbsp;400</p>
             <a class="subscription-item__button" href="#">Купить абонемент</a>
           </li>
           <li class="subscription-list__item subscription-item">
             <h3 class="subscription-item__title">Полный день</h3>
             <span class="subscription-item__subtitle">с 8:00 до 22:00</span>
-            <p class="subscription-item__price" data-price="X">X</p>
+            <p class="subscription-item__price" data-price="32&nbsp;400">32&nbsp;400</p>
             <a class="subscription-item__button" href="#">Купить абонемент</a>
           </li>
         </ul>
@@ -713,7 +713,49 @@
         </button>
       </div>
     </div>
-    <div data-test="form">form</div>
+    <div class="contact" data-test="form">
+      <div class="contact__info-wrapper">
+        <div class="contact__info contact-info contact__info--first">
+          <h2 class="contact-info__title contact-info__title--first">Бесплатное занятие</h2>
+          <form class="contact-info__form contact-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="contact-form__wrapper">
+              <label class="visually-hidden" for="name-field">Имя</label>
+              <input class="contact-form__field" id="name-field" type="text" name="name" placeholder="Имя"
+                pattern="[A-Za-zА-Яа-яЁё\s]+$" required>
+              <label class="visually-hidden" for="phone-field">Телефон</label>
+              <input class="contact-form__field" id="phone-field" type="tel" name="phone" placeholder="Телефон"
+                pattern="\+?[0-9\s\-\(\)]+" required>
+            </div>
+            <button type="submit">отправить</button>
+          </form>
+        </div>
+      </div>
+      <div class="contact__info contact-info contact__info--second">
+        <h2 class="contact-info__title contact-info__title--second">Контакты</h2>
+        <div class="contact-info__offline-online">
+          <div class="contact-info__offline offline-contact">
+            <div class="offline-contact__wrapper">
+              <h3 class="offline-contact__title">Адрес:</h3>
+              <address class="offline-contact__text">г. Омск, ул. 60 лет Октября, 7</address>
+            </div>
+            <div class="offline-contact__wrapper">
+              <h3 class="offline-contact__title">График работы:</h3>
+              <p class="offline-contact__text">Пн-Вс: с 8:00 до 22:00</p>
+            </div>
+          </div>
+          <div class="contact-info__online online-contact">
+            <div class="online-contact__wrapper">
+              <h3 class="online-contact__title">Телефон:</h3>
+              <a class="online-contact__text" href="tel:+78005555555">8 800 555-55-55</a>
+            </div>
+            <div class="online-contact__wrapper">
+              <h3 class="online-contact__title">Email:</h3>
+              <a class="online-contact__text" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div data-test="footer">footer</div>
   </main>
   <footer></footer>

@@ -1,0 +1,57 @@
+.footer__socials {
+  @include reset-list;
+
+  display: flex;
+  gap: 20px;
+  margin: 2px 0 0;
+
+  @media (min-width: $width-tablet) {
+    gap: 15px;
+    margin: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    gap: 10px;
+  }
+}
+
+.social-list__icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $icon-color-light;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #74819c;
+  }
+
+  &:focus {
+    background-color: $text-color-accent;
+  }
+
+  &:active {
+    background-color: $background-color-dark;
+  }
+
+  &--disabled {
+    pointer-events: none;
+    background-color: $icon-color-light;
+    opacity: 0.3;
+  }
+}
+
+.social-list__svg {
+  fill: $footer-background-color;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-list__icon:hover .social-list__svg,
+.social-list__icon:focus .social-list__svg,
+.social-list__icon:active .social-list__svg {
+  fill: $icon-color-light;
+}

@@ -1,0 +1,29 @@
+.footer {
+  background-color: $footer-background-color;
+  padding: 40px 15px;
+
+  @media (min-width: $width-tablet) {
+    padding: 45px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 40px 103px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    gap: 25.5px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  @media (min-width: $width-desktop) {
+    gap: 157.5px;
+  }
+}

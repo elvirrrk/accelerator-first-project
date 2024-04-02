@@ -4,3 +4,4 @@ import './jury.js';
 import './faq.js';
 import './faq-accordion.js';
 import './reviews.js';
+import './contact-form.js';

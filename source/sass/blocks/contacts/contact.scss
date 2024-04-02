@@ -4,8 +4,8 @@
 
   @media (min-width: $width-desktop) {
     flex-direction: row;
+    justify-content: center;
   }
-  //не указываем здесь паддинг и размер, только расположение блоков
 }
 
 .contact__info-wrapper {
@@ -21,16 +21,26 @@
   gap: 36px;
 
   &--first {
-    @media (max-width: 767px) {
-    padding: 70px 15px;
+    @media (width <= 767px) {
+      padding: 70px 15px;
     }
   }
 
   &--second {
-    @media (max-width: 767px) {
-    padding: 40px 15px;
-    gap: 42px;
     text-align: left;
+
+    @media (width <= 767px) {
+      padding: 37px 15px 39px;
+      gap: 38px;
+    }
+
+    @media (min-width: $width-desktop) {
+      border-top: 1px solid #74819c;
+    }
+
+    @media (width >= 1367px) {
+      border-right: 1px solid #74819c;
+      border-bottom: 1px solid #74819c;
     }
   }
 
@@ -38,22 +48,25 @@
     margin: 0 auto;
     padding: 60px 45px;
     width: 440px;
-    justify-content: center;
   }
 
   @media (min-width: $width-desktop) {
-    padding: 60px 103px;
+    margin: 0;
+    padding: 59px 103px 60px;
     width: 477px;
+    text-align: left;
   }
 }
 
 .contact-info__title {
   @include mobile-h3;
+
   margin: 0;
   text-align: left;
 
   @media (min-width: $width-tablet) {
     @include desktop-h3;
+
     margin: 0 auto;
     text-align: center;
   }
@@ -70,10 +83,4 @@
   &--second {
     color: $text-color-dark;
   }
-}
-
-.contact-info__form {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
 }

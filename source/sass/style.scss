@@ -72,5 +72,12 @@
 
 // contacts
 
-@import "blocks/contacts/contact.scss";
-@import "blocks/contacts/contact-form-field.scss";
+@import "blocks/contacts/contact";
+@import "blocks/contacts/contact-form";
+@import "blocks/contacts/contact-info";
+
+// footer
+
+@import "blocks/footer/footer";
+@import "blocks/footer/footer-links";
+@import "blocks/footer/footer-socials";

@@ -1,0 +1,160 @@
+.contact-info__form {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  @media (min-width: $width-tablet) {
+    gap: 35px;
+  }
+}
+
+.contact-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin: 0;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+  }
+}
+
+// поле формы
+
+.contact-form__field {
+  padding-inline: 0;
+  background-color: $background-color-dark;
+  border: none;
+  border-bottom: 2px solid #74819c;
+  outline: none;
+  width: 290px;
+
+  @include mobile-text-m;
+
+  line-height: 23px;
+  color: $text-color-ligth;
+  transition: all 0.3s ease-in-out;
+
+  &::placeholder {
+    color: $text-color-ligth;
+    opacity: 0.4;
+  }
+
+  // для autocomplete
+
+  &:-webkit-autofill {
+    border-bottom: 2px solid $form-color;
+    color: $text-color-ligth;
+    -webkit-text-fill-color: $text-color-ligth;
+    box-shadow: 0 0 0 1000px $background-color-dark inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  &--invalid {
+    border-bottom: 2px solid $form-color-error;
+
+    &:focus,
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus,
+    &:active {
+      border-bottom: 2px solid $form-color-error;
+    }
+  }
+
+  &--valid {
+    &:hover,
+    &:-webkit-autofill:hover {
+      border-bottom: 2px solid $form-color;
+    }
+
+    &:focus,
+    &:-webkit-autofill:focus,
+    &:active {
+      outline-offset: 4px;
+      border-bottom: 2px solid transparent;
+      outline: 1px solid $form-color;
+    }
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 205px;
+    line-height: 23.5px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 223.5px;
+  }
+}
+
+.contact-form__label {
+  position: relative;
+}
+
+.contact-form__message {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+
+  @include mobile-text-m;
+
+  color: $form-color-error;
+}
+
+// кнопка формы
+
+.contact-form__button {
+  padding: 22px 56px;
+  width: 290px;
+  color: $text-color-ligth;
+  font-family: $font-family-main;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  background-color: $background-color-dark;
+  border: 2px solid $button-border-color-light;
+  cursor: pointer;
+
+  &:hover {
+    color: $text-color-accent;
+    background-color: $background-color-light;
+  }
+
+  &:focus {
+    color: $text-color-accent;
+    border-color: #000000;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  &:active {
+    color: $text-color-dark;
+    border-color: $button-border-color-light;
+    background-color: $background-color-light;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding: 25px 56px;
+    width: 440px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 477px;
+  }
+}

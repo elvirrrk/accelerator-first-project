@@ -719,44 +719,99 @@
           <h2 class="contact-info__title contact-info__title--first">Бесплатное занятие</h2>
           <form class="contact-info__form contact-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="contact-form__wrapper">
-              <label class="visually-hidden" for="name-field">Имя</label>
-              <input class="contact-form__field" id="name-field" type="text" name="name" placeholder="Имя"
-                pattern="[A-Za-zА-Яа-яЁё\s]+$" required>
-              <label class="visually-hidden" for="phone-field">Телефон</label>
-              <input class="contact-form__field" id="phone-field" type="tel" name="phone" placeholder="Телефон"
-                pattern="\+?[0-9\s\-\(\)]+" required>
+              <label class="contact-form__label">
+                <input class="contact-form__field contact-form__field--valid" type="text" name="name" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё\s]+$" required>
+                <span class="contact-form__message contact-form__message--name">Имя должно содержать только буквы и пробел</span>
+              </label>
+              <label class="contact-form__label">
+                <input class="contact-form__field contact-form__field--valid" type="tel" name="phone" placeholder="Телефон" pattern="\+?[0-9\s\-()]+" maxlength="13" required>
+                <span class="contact-form__message contact-form__message--phone">Введите номер, неболее 12 цифр</span>
+              </label>
             </div>
-            <button type="submit">отправить</button>
+            <button class="contact-form__button" type="submit">отправить</button>
           </form>
         </div>
       </div>
       <div class="contact__info contact-info contact__info--second">
         <h2 class="contact-info__title contact-info__title--second">Контакты</h2>
-        <div class="contact-info__offline-online">
-          <div class="contact-info__offline offline-contact">
-            <div class="offline-contact__wrapper">
-              <h3 class="offline-contact__title">Адрес:</h3>
-              <address class="offline-contact__text">г. Омск, ул. 60 лет Октября, 7</address>
+        <div class="contact-info__container container-info">
+          <div class="container-info__contact information">
+            <div class="information__wrapper">
+              <h3 class="information__title">Адрес:</h3>
+              <address class="information__text">г. Омск, ул. 60 лет Октября, 7</address>
             </div>
-            <div class="offline-contact__wrapper">
-              <h3 class="offline-contact__title">График работы:</h3>
-              <p class="offline-contact__text">Пн-Вс: с 8:00 до 22:00</p>
+            <div class="information__wrapper">
+              <h3 class="information__title">График работы:</h3>
+              <p class="information__text">Пн-Вс: с 8:00 до 22:00</p>
             </div>
           </div>
-          <div class="contact-info__online online-contact">
-            <div class="online-contact__wrapper">
-              <h3 class="online-contact__title">Телефон:</h3>
-              <a class="online-contact__text" href="tel:+78005555555">8 800 555-55-55</a>
+          <div class="container-info__contact information">
+            <div class="information__wrapper">
+              <h3 class="information__title">Телефон:</h3>
+              <a class="information__text" href="tel:+78005555555">8 800 555-55-55</a>
             </div>
-            <div class="online-contact__wrapper">
-              <h3 class="online-contact__title">Email:</h3>
-              <a class="online-contact__text" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+            <div class="information__wrapper">
+              <h3 class="information__title">Email:</h3>
+              <a class="information__text" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div data-test="footer">footer</div>
+    <div class="footer" data-test="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1366px)" srcset="img/logo.svg" width="130" height="26">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="img/logo.svg" width="110" height="22">
+            <img src="img/logo.svg" width="100" height="20" alt="логотип Фитнес центра">
+          </picture>
+        </div>
+        <ul class="footer__links link-list">
+          <li class="link-list__item">
+            <a class="link-list__text" href="#">Услуги</a>
+          </li>
+          <li class="link-list__item">
+            <a class="link-list__text" href="#">Абонементы</a>
+          </li>
+          <li class="link-list__item">
+            <a class="link-list__text" href="#">Акции</a>
+          </li>
+          <li class="link-list__item">
+            <a class="link-list__text" href="#">Тренеры</a>
+          </li>
+          <li class="link-list__item">
+            <a class="link-list__text" href="#">Расписание</a>
+          </li>
+        </ul>
+        <ul class="footer__socials social-list">
+          <li class="social-list__item">
+            <a class="social-list__icon" href="#">
+              <span class="visually-hidden">вконтакте</span>
+              <svg class="social-list__svg" width="14" height="12">
+                <use href="/__spritemap#sprite-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__icon" href="#">
+              <span class="visually-hidden">одноклассники</span>
+              <svg class="social-list__svg" width="16" height="20">
+                <use href="/__spritemap#sprite-odnoklassniki"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__icon" href="#">
+              <span class="visually-hidden">реддит</span>
+              <svg class="social-list__svg" width="15" height="15">
+                <use href="/__spritemap#sprite-reddit"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
   <footer></footer>
   <script type="module" src="js/main.js"></script>

@@ -18,9 +18,10 @@
   margin: 0 auto;
   width: 290px;
   text-align: center;
-  gap: 36px;
 
   &--first {
+    gap: 35px;
+
     @media (width <= 767px) {
       padding: 70px 15px;
     }
@@ -28,6 +29,7 @@
 
   &--second {
     text-align: left;
+    gap: 36px;
 
     @media (width <= 767px) {
       padding: 37px 15px 39px;

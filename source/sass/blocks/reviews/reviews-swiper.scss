@@ -5,12 +5,12 @@
   width: 240px;
 
   @media (min-width: $width-tablet) {
-    padding: 60px 45px;
+    padding: 59.5px 45px 60px;
     width: 678px;
   }
 
   @media (min-width: $width-desktop) {
-    padding: 100px 103px;
+    padding: 99px 103px 99.7px;
     width: 672px;
   }
 }

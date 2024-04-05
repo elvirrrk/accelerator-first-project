@@ -4,6 +4,7 @@
   row-gap: 10px;
   padding: 30px 25px;
   width: 190px;
+  min-height: 268px;
   background-color: $background-color-dark-extra;
   color: $text-color-ligth;
   text-align: center;
@@ -15,12 +16,14 @@
     column-gap: 40px;
     padding: 40px 30px;
     width: 440px;
+    min-height: 162px;
     text-align: left;
   }
 
   @media (min-width: $width-desktop) {
     padding: 60px;
     column-gap: 30px;
+    min-height: 138px;
   }
 }
 
